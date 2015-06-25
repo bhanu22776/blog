@@ -17,5 +17,11 @@
 </div>
 <%= yield %>
 
+  <script src="/assets/audio.min.js"></script>
+  <script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
 </body>
 </html>
