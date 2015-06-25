@@ -24,12 +24,11 @@
 
               <iframe width="490" height="275" src="<%= video_path @upload.video %>" frameborder="0" allowfullscreen autoplay="true">
             </iframe> -->
-<video id='video' controls>
+<video width="320" height="240" controls>
   <source src='<%= @upload.video %>' />
 </video>
 
 </p>
-
 
 
 <p>
@@ -38,6 +37,8 @@
   <audio src="<%= @upload.audio %>" preload="none" />
 </p>
 
+
 <%= link_to 'Edit', edit_upload_path(@upload) %> |
 <%= link_to 'Back', uploads_path %>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

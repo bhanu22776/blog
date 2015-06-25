@@ -20,7 +20,9 @@
                      :file_name => { :matches => [/mp3\Z/] }
 
 	has_attached_file :video
-	validates_attachment_content_type :video, :content_type => [ 'video/mp4', 'video.mov', 'video/mpeg','video/mpeg4']
-
+	validates_attachment_content_type :video, :content_type => [ 'video/mp4', 'video.mov', 'video/mpeg','video/mpeg4','video/x-flv',
+		'video/x-matroska','video/webm','video/avi','video/ogg','video/x-divx','video/divx','video/x-msvideo', 'video/quicktime', 
+		'video/3gpp', 'video/x-ms-wmv', 'flv-application/octet-stream', 'video/mpeg4', 'video/x-la-asf', 'video/x-ms-asf', 
+		'video/msvideo', 'video/avi', '"video/x-msvideo', 'video/x-ms-wmv']
 end
 
