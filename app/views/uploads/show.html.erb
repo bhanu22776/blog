@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @upload.name %>
+</p>
+<p>
+  <b>Photo:</b>
+  <%= image_tag @upload.photo, :size => "150x150" %>
+</p>
+
+
+<%= link_to 'Edit', edit_upload_path(@upload) %> |
+<%= link_to 'Back', uploads_path %>
