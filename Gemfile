@@ -42,3 +42,5 @@ gem 'devise'
 gem "paperclip"
 
 gem "rails_admin"
+
+gem 'proxylocal'
